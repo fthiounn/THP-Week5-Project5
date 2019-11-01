@@ -4,7 +4,11 @@
 <div class="jumbotron-hero">
   <div class="container text-center" >
     <h1 class="display-4 pt-5 font-weight-bold text-dark">THE GOSSIP PROJECT</h1>
-    <%= link_to "Create an account and spread your Gossips !", {controller: "gossips", action: "new"}, class: "btn btn-success btn-lg bottom"%>
+    <% if logged_in? %>
+      <%= link_to "Create a Gossip !", {controller: "gossips", action: "new"}, class: "btn btn-success btn-lg bottom"%>
+    <% else %>
+    <%= link_to "Create an account and spread your Gossips !", {controller: "users", action: "new"}, class: "btn btn-success btn-lg bottom"%>
+    <% end %>
   </div>
 </div>
 

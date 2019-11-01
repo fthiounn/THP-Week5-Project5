@@ -7,9 +7,14 @@
 # Notes & Use :
 
 
- 
+Ce qu'il reste a implementer (et ne sera jamais fait):
 
- 
+	- creation de villes et index des villes
+	- remember me au signup (surtout comprendre l'utilitée de cette fonction :D )
+	- finir la gestion des tags
+	- verifier la suppression en memoire des comments et likes relies a un gossip lors de la suppression de celui ci (de meme pour les comments)
+	- dashboard user avec modif du profil
+	- suppression de son compte utilisateur
  
 
 
